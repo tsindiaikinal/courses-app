@@ -1,17 +1,28 @@
 <template>
-  <div class="about">
-    <UsersComp></UsersComp>
+  <div class="users">
+    <table-template></table-template>
   </div>
 </template>
 
 <script>
-
-import UsersComp from "@/components/UsersComp.vue";
+import TableTemplate from "@/components/Table.vue";
 
 export default {
-   name: "Users",
+  name: "Users",
   components: {
-    UsersComp
+    TableTemplate
+  },
+  data() {
+    return {
+      profile: "Users profile"
+    };
   }
-}
+};
 </script>
+
+<style lang="scss" scoped>
+.users {
+  width: 80%;
+  margin: auto;
+}
+</style>

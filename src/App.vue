@@ -3,10 +3,10 @@
     <div class="container">
       <div class="navbar">
         <div id="nav">
-        <div class="logo">Век живи, век учись!</div>
+          <div class="logo">Век живи, век учись!</div>
           <div>
-            <router-link to="/">Home</router-link>|
-            <router-link to="/courses">Courses</router-link>|
+            <router-link to="/">Home</router-link> |
+            <router-link to="/courses">Courses</router-link> |
             <router-link to="/users">Users</router-link>
           </div>
         </div>
@@ -18,9 +18,9 @@
 
 <style lang="scss">
 // COLORS
-$lblack: #35495E;
+$lblack: #35495e;
 $white: #ffffff;
-$lgreen: #59B983;
+$lgreen: #59b983;
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +46,7 @@ $lgreen: #59B983;
     // padding: auto 2% auto;
     font-weight: 400;
     color: $white;
+    text-decoration: none;
     &.router-link-exact-active {
       color: $lgreen;
     }
